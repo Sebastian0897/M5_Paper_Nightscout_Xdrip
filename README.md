@@ -3,6 +3,9 @@ Using an M5-Paper to show various things. From the Current time, to weather but 
 And all of that as Energy Saving as Possible. You dont need to use the Blood Glucose Display if you dont have any use for it.
 I am  also planing  implementing Features like Smart Home Control. But it is currently not a Priority. 
 
+# Picture 
+<img src="https://user-images.githubusercontent.com/68860524/107633955-1daa5480-6c69-11eb-899c-6fa9a0e8f37f.jpeg" width="398" height="600">
+
 # How it works
 The Programm starts every minute to update the clock and update other information. That is all that is needed as the M5 Paper has an E-ink Display that retains the information without using power.
 What to update when is currently hard coded, but I am Planing to implement a config file to make that easier to configure.
