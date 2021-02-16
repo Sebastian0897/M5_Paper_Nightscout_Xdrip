@@ -11,11 +11,11 @@ The Programm starts every minute to update the clock and update other informatio
 What to update when is currently hard coded, but I am Planing to implement a config file to make that easier to configure.
 After all the Updates the devices calculates how long to shut off (and set a timer via the RTC) to reboot in time for the Clock to switch to the next minute.
 
-The current Battery Life is ~2 Days with every minute update of the Blood glucose. without it is ~ 4 days.
+The current Battery Life is ~2 Days. If you disable the Blood glucose display it should be ~3 days.
 
 # Using the Code
-For the Code to Work Correctly the RTC time needs to be set before installing my Code. Also you need to fill in your wifi Credentials, Openweathermap APi key (if you want the Temperatur Display), Nightscout server adress(if you want the Blood Glucose Display). 
-You can also set alternative Wifi Credetials further down the Code in ConnectWifi(). At the bottom of the code is the main loop were you can set what to run when. I am planing on Improving how that works to make it configurable in a Config file.
+For the Code to Work Correctly the RTC time needs to be set before installing my Code. Also you need to fill in your wifi Credentials(only 1 set required but multiple are possible), Openweathermap APi key (if you want the Temperatur Display), Nightscout server adress(if you want the Blood Glucose Display). 
+At the bottom of the code is the main loop were you can set what to run when. I am planing on Improving how that works to make it configurable in a Config file.
 
 
 # Currently working:
@@ -23,13 +23,15 @@ You can also set alternative Wifi Credetials further down the Code in ConnectWif
 - On/Off Notification         
 - WIFI Indicator              
 - Battery Indicator           
-- Rudimentry Energy saving    
+- Energy saving    
 - Temperatur Display for a given location            
 - Display for Blood Glucose over Nightscout 
 - Multiple Wifi Credentials Possible
 
 
 # TODO:
+
+I have decided to write a framework to switch between multiple Programs. And not write the Smarthome controll stuff in this program. but a seperate one. I will put a link here to the repository when i have something to show.
 
 GUI:
 - Better Arrows to Indicate Blood Glucose Direction
@@ -38,9 +40,9 @@ GUI:
 - maybe a Different Font
 
 Features:
-- Working on the Energy saving -> dont update Blood glucose every minute as it requires a Wifi connection 
+- Energy saving (only minor improvements left)
 - Config file for the parameters that need to be set
-- Change the main loop to make i configurable wit a config file
+- Change the main loop to make i configurable with a config file
 - Multiple Languages (currently just German GUI)
 - Find something usefull to do with the half empty Display
 - Get Blood Glucose Directly per Bluetooth from Xdrip
