@@ -1,5 +1,5 @@
-# M5-Paper-Nightscout-Xdrip
-Using an M5-Paper to show various things. From the Current time, to weather but also the current Blood Glucose, via Nightscout and in Future over Bluetooth from Xdrip Directly.
+# M5_Paper_Nightscout_Xdrip
+Using an M5-Paper to show various things. From the Current time, to weather but also the current Blood Glucose, via Nightscout and in Future over Bluetooth from Xdrip Directly.(working on the bluetooth connection currently)
 And all of that as Energy Saving as Possible. You dont need to use the Blood Glucose Display if you dont have any use for it.
 I am  also planing  implementing Features like Smart Home Control. * Update * I will implement Smarthome stuff in a seprate Program and write a framework to switch programs
 
