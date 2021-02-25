@@ -11,7 +11,7 @@ The Programm starts every minute to update the clock and update other informatio
 What to update when is currently hard coded, but I am Planing to implement a config file to make that easier to configure.
 After all the Updates the devices calculates how long to shut off (and set a timer via the RTC) to reboot in time for the Clock to switch to the next minute.
 
-The current Battery Life is ~2 Days. If you disable the Blood glucose display it should be ~3 days.
+The current Battery Life is nearly 3 Days. If you disable the Blood glucose Display it should be longer.
 
 # Using the Code
 For the Code to Work Correctly the RTC time needs to be set before installing my Code. Also you need to fill in your wifi Credentials(only 1 set required but multiple are possible), Openweathermap APi key (if you want the Temperatur Display), Nightscout server adress(if you want the Blood Glucose Display). 
@@ -40,7 +40,7 @@ GUI:
 - maybe a Different Font
 
 Features:
-- Energy saving (only minor improvements left)
+- Implement a bluetooth and a wifi mode
 - Config file for the parameters that need to be set
 - Change the main loop to make i configurable with a config file
 - Multiple Languages (currently just German GUI)
